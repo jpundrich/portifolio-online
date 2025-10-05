@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josinei Rangel Pundrich - Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container">
+    <h1 class="cabecalho">Josinei Rangel Pundrich</h1>
+  </header>
+
+  <nav class="container menu">
+    <ul>
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portifolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="container wrapper">
+    <aside class="imagem_josinei">
+      <img src="imagem/foto-josinei.jpeg" alt="Foto de Josinei Rangel Pundrich">
+      <div class="infos">
+        <p><strong>Data de nascimento:</strong> 08/03/1990</p>
+        <p><strong>Telefone:</strong> (15) 99192-****</p>
+      </div>
+    </aside>
+
+    <section class="principal">
+      <h1>Preencha seus dados abaixo:</h1>
+    
+
+
+    <section class="formulario">
+      <form id="form-contato" action="#" method="post">
+        <div class="campo nome">
+          <label for="nome">Seu nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome aqui"
+            autocomplete="name"
+            required
+            minlength="3">
+        </div>
+
+        <div class="campo email">
+          <label for="email">Seu e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Seu e-mail aqui"
+            autocomplete="email"
+            required>
+        </div>
+
+        <div class="campo tel">
+          <label for="tel">Telefone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="telefone"
+            placeholder="(XX) XXXXX-XXXX"
+            autocomplete="tel"
+            required>
+        </div>
+
+        <div class="campo mensagem">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            cols="30"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+            minlength="10"></textarea>
+        </div>
+
+        <div class="campo">
+          <button type="submit" id="enviar">Enviar</button>
+        </div>
+      </form>
+    </section>
+    </section>
+  </div>
+
+  <footer class="rodape">
+    <h4>Josinei Rangel Pundrich™️</h4>
+    <h5>Todos os direitos reservados</h5>
+  </footer>
+
+  <!-- script no final do body -->
+  <script src="script.js"></script>
+</body>
+</html>
