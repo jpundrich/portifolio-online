@@ -229,11 +229,20 @@ body.tema-escuro footer {
   }
 
   /* Corrige menu quebrado no mobile */
-  .menu ul { gap: 8px 10px; }
-  .menu a {
-    padding: 8px 12px;
-    white-space: nowrap; /* evita quebra em “So / bre mim” */
-  }
-
-  footer { margin-top: 20px; padding: 12px; }
+  /* ----- MENU MOBILE: GRID 2x2 ----- */
+.menu ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* duas colunas */
+  gap: 10px;
+  padding: 0 12px;
+}
+.menu li{ margin: 0; }
+.menu a{
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid #506E6A;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 16px;
 }
