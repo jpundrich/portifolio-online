@@ -193,7 +193,7 @@ body.tema-escuro footer {
 
 /* ----- MODO RESPONSIVO ----- */
 /* Tudo abaixo de 900px adapta para o celular */
-@media (max-width: 900px) {
+@media (max-width: 767px) {
 
   /* Centraliza o título e reduz tamanho */
   .container h1.cabecalho {
@@ -231,18 +231,43 @@ body.tema-escuro footer {
   /* Corrige menu quebrado no mobile */
   /* ----- MENU MOBILE: GRID 2x2 ----- */
 .menu ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;  /* duas colunas */
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 12px;
   padding: 0 12px;
 }
-.menu li{ margin: 0; }
+.menu li{
+  flex: 1 1 42%;        /* força tamanhos similares */
+  display: flex;
+}
 .menu a{
-  display: block;
+  width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   border: 1px solid #506E6A;
   border-radius: 8px;
   background: #fff;
   font-size: 16px;
+  white-space: nowrap;  /* não deixa quebrar “Sobre mim” */
 }
+  footer { margin-top: 20px; padding: 12px; }
+}
+/* BOTÃO DE TEMA: sempre visível, fora do cabeçalho */
+#botao-tema{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  background: #1aa7a7;
+  color: #fff;
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+  cursor: pointer;
+  transition: background .2s ease;
+}
+#botao-tema:hover{ background:#148c8c; }
+body.tema-escuro #botao-tema{ background:#0e716f; }
